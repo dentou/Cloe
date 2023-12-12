@@ -56,4 +56,6 @@ class BaseSettingsTab(BaseSettings):
         buttonBar.layout().addWidget(self.saveButton)
         buttonBar.layout().addWidget(self.closeButton)
 
-        self.layout().addWidget(buttonBar, row, 0, 1, -1, alignment=Qt.AlignBottom)
+        self.layout().addWidget(
+            buttonBar, row, 0, 1, -1, alignment=Qt.AlignBottom
+        )

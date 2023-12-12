@@ -71,7 +71,9 @@ class BaseSettings(QWidget):
 
     def loadSettings(self):
         for propName, propDefault in self._defaults.items():
-            prop = self.settings.value(f"{self._prefix}{propName}", propDefault)
+            prop = self.settings.value(
+                f"{self._prefix}{propName}", propDefault
+            )
             self.setProperty(propName, prop)
 
     def confirmResetSettings(self):

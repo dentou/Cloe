@@ -49,7 +49,9 @@ class ExternalWindow(QMainWindow):
 
         # FramelessWindowHint flag also enables transparent background.
         # WindowStaysOnTopHint & Popup flags ensures that the widget is the top window.
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Popup)
+        self.setWindowFlags(
+            Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Popup
+        )
 
         self.setCentralWidget(FullScreenView(self))
         self.ocrModel = parent.ocrModel

@@ -89,7 +89,9 @@ class SystemTray(QSystemTrayIcon):
     def loadModel(self):
         def loadModelHelper():
             try:
-                self.showMessage("Please wait", "Loading the MangaOCR model ...")
+                self.showMessage(
+                    "Please wait", "Loading the MangaOCR model ..."
+                )
                 self.ocrModel = MangaOcr()
                 return "success"
             except Exception as e:

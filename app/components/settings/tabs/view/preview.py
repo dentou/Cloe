@@ -70,11 +70,17 @@ class Preview(QWidget):
                 if isWhite:
                     color.setRgb(255, 255, 255, 255)
                 painter.fillRect(
-                    x * squareSize, y * squareSize, squareSize, squareSize, color
+                    x * squareSize,
+                    y * squareSize,
+                    squareSize,
+                    squareSize,
+                    color,
                 )
                 isWhite = not isWhite
         # Draw true background
-        painter.fillRect(0, 0, self.width(), self.height(), self.backgroundColor)
+        painter.fillRect(
+            0, 0, self.width(), self.height(), self.backgroundColor
+        )
         # Draw border
         painter.setPen(QPen(QColor(0, 0, 0), 2))
         painter.drawRect(0, 0, self.width(), self.height())

@@ -17,7 +17,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from PyQt5.QtCore import QPoint, QRect, QSize, QThreadPool, QTimer, Qt, pyqtSlot
+from PyQt5.QtCore import (
+    QPoint,
+    QRect,
+    QSize,
+    QThreadPool,
+    QTimer,
+    Qt,
+    pyqtSlot,
+)
 from PyQt5.QtGui import QCursor, QPixmap
 from PyQt5.QtWidgets import QApplication, QGraphicsView, QLabel, QWidget
 

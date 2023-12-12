@@ -34,7 +34,9 @@ class Hotkeys(GlobalHotKeys):
         tuple[obj (QObject), fn (str)]: Object/widget with function named fn
     """
 
-    def __init__(self, hotkeys: dict[str, tuple[QObject, str]], *args, **kwargs):
+    def __init__(
+        self, hotkeys: dict[str, tuple[QObject, str]], *args, **kwargs
+    ):
         for h in hotkeys:
             obj, fn = hotkeys[h]
             hotkeys[h] = lambda obj=obj, fn=fn: self.onPress(obj, fn)

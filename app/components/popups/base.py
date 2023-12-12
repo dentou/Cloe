@@ -39,5 +39,7 @@ class BasePopup(QMessageBox):
         *args,
         **kwargs
     ):
-        super().__init__(QMessageBox.NoIcon, title, message, buttons, *args, **kwargs)
+        super().__init__(
+            QMessageBox.NoIcon, title, message, buttons, *args, **kwargs
+        )
         self.setAttribute(Qt.WA_DeleteOnClose)

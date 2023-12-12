@@ -76,7 +76,9 @@ class ViewSettingsTab(ViewContainer, BaseSettingsTab):
 
         # Signals and Slots
         _previewColor.clicked.connect(lambda: self.getColor("previewColor"))
-        _previewBackground.clicked.connect(lambda: self.getColor("previewBackground"))
+        _previewBackground.clicked.connect(
+            lambda: self.getColor("previewBackground")
+        )
         _previewFont.clicked.connect(lambda: self.getFont("previewFont"))
         _previewPadding.clicked.connect(lambda: self.getInt("previewPadding"))
 

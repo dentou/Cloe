@@ -23,7 +23,12 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QCheckBox, QComboBox, QHBoxLayout, QLabel
 
 from ..base import BaseSettings
-from utils.constants import HOTKEY_DEFAULT, HOTKEY_CONFIG, UNMAPPED_KEY, VALID_KEY_LIST
+from utils.constants import (
+    HOTKEY_DEFAULT,
+    HOTKEY_CONFIG,
+    UNMAPPED_KEY,
+    VALID_KEY_LIST,
+)
 from utils.scripts import camelizeText
 
 
