@@ -39,6 +39,7 @@ STYLESHEET_DEFAULT = "./assets/styles.qss"
 # Config
 HOTKEY_CONFIG = "./utils/cloe-hotkey.ini"
 VIEW_CONFIG = "./utils/cloe-view.ini"
+OCR_CONFIG = "./utils/cloe-ocr.ini"
 
 # Defaults
 HOTKEY_DEFAULT = {
@@ -68,6 +69,11 @@ VIEW_DEFAULT = {
     "selectionBorderThickness": 2,
     "selectionBackground": QColor(0, 128, 255, 60),
     "windowColor": QColor(255, 255, 255, 13),
+}
+OCR_DEFAULT = {
+    "engine": {
+        "name": "manga-ocr"
+    }
 }
 
 # Constants
@@ -100,6 +106,11 @@ VALID_KEY_LIST = [
     "X",
     "Y",
     "Z",
+]
+
+VALID_OCR_ENGINE_LIST = [
+    "manga-ocr",
+    "paddleocr",
 ]
 
 # --------------------------------------- Misc -------------------------------------- #
